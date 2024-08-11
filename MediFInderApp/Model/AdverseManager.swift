@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class AdverseManager{
+    
+    let monitor = NetworkMonitor()
+    
+    private var 
+}

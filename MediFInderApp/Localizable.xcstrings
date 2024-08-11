@@ -1,7 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "First medicine to compare" : {
 
+    },
+    "Second medicine to compare" : {
+
+    }
   },
   "version" : "1.0"
 }

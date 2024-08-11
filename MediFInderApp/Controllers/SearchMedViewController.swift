@@ -8,7 +8,10 @@
 import UIKit
 
 class SearchMedViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var MedTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +29,21 @@ class SearchMedViewController: UIViewController {
     }
     */
 
+}
+
+extension SearchMedViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return manager?.getItemCount()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchMedCell", for: indexPath) as? SearchMedTableViewCell
+        cell?.medImage
+        cell?.medBrandName
+        cell?.medGenericName
+        cell?.medManufacturer
+        cell?.medRoute
+    }
+    
+    
 }

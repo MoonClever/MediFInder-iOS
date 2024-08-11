@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3131052C682CDE00B247E1 /* DrugLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131002C682CDE00B247E1 /* DrugLabel.swift */; };
+		5B3131062C682CDE00B247E1 /* DrugMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131012C682CDE00B247E1 /* DrugMeta.swift */; };
+		5B3131072C682CDE00B247E1 /* Openfda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131022C682CDE00B247E1 /* Openfda.swift */; };
+		5B3131082C682CDE00B247E1 /* DrugResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131032C682CDE00B247E1 /* DrugResults.swift */; };
+		5B31310D2C682CFE00B247E1 /* AdverseMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310A2C682CFE00B247E1 /* AdverseMeta.swift */; };
+		5B31310E2C682CFE00B247E1 /* AdverseResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310B2C682CFE00B247E1 /* AdverseResults.swift */; };
+		5B31310F2C682CFE00B247E1 /* AdverseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310C2C682CFE00B247E1 /* AdverseCount.swift */; };
+		5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131102C682E3600B247E1 /* AdverseManager.swift */; };
+		5B3131132C682E4200B247E1 /* DrugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131122C682E4200B247E1 /* DrugManager.swift */; };
+		5B3131172C682E8C00B247E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */; };
 		C0A6E2312C67564700ED1F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2302C67564700ED1F2F /* AppDelegate.swift */; };
 		C0A6E2332C67564700ED1F2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2322C67564700ED1F2F /* SceneDelegate.swift */; };
-		C0A6E2352C67564700ED1F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2342C67564700ED1F2F /* ViewController.swift */; };
 		C0A6E2382C67564700ED1F2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C0A6E2372C67564700ED1F2F /* Base */; };
 		C0A6E23A2C67564900ED1F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A6E2392C67564900ED1F2F /* Assets.xcassets */; };
 		C0A6E23D2C67564900ED1F2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C0A6E23C2C67564900ED1F2F /* Base */; };
+		C0A6E2462C675F0600ED1F2F /* AdverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2452C675F0600ED1F2F /* AdverseViewController.swift */; };
+		C0A6E2482C67605400ED1F2F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C0A6E2472C67605400ED1F2F /* Localizable.xcstrings */; };
+		C0A6E24A2C67610700ED1F2F /* MedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2492C67610700ED1F2F /* MedListViewController.swift */; };
+		C0A6E24C2C67613100ED1F2F /* SearchMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E24B2C67613100ED1F2F /* SearchMedViewController.swift */; };
+		C0A6E24F2C67658900ED1F2F /* SearchMedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E24E2C67658900ED1F2F /* SearchMedTableViewCell.swift */; };
+		C0A6E2512C676A8F00ED1F2F /* ListMedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2502C676A8F00ED1F2F /* ListMedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B3131002C682CDE00B247E1 /* DrugLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugLabel.swift; sourceTree = "<group>"; };
+		5B3131012C682CDE00B247E1 /* DrugMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugMeta.swift; sourceTree = "<group>"; };
+		5B3131022C682CDE00B247E1 /* Openfda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Openfda.swift; sourceTree = "<group>"; };
+		5B3131032C682CDE00B247E1 /* DrugResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugResults.swift; sourceTree = "<group>"; };
+		5B31310A2C682CFE00B247E1 /* AdverseMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseMeta.swift; sourceTree = "<group>"; };
+		5B31310B2C682CFE00B247E1 /* AdverseResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseResults.swift; sourceTree = "<group>"; };
+		5B31310C2C682CFE00B247E1 /* AdverseCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseCount.swift; sourceTree = "<group>"; };
+		5B3131102C682E3600B247E1 /* AdverseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverseManager.swift; sourceTree = "<group>"; };
+		5B3131122C682E4200B247E1 /* DrugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugManager.swift; sourceTree = "<group>"; };
+		5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C0A6E22D2C67564700ED1F2F /* MediFInderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediFInderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A6E2302C67564700ED1F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A6E2322C67564700ED1F2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0A6E2342C67564700ED1F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0A6E2372C67564700ED1F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A6E2392C67564900ED1F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A6E23C2C67564900ED1F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A6E23E2C67564900ED1F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A6E2452C675F0600ED1F2F /* AdverseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverseViewController.swift; sourceTree = "<group>"; };
+		C0A6E2472C67605400ED1F2F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C0A6E2492C67610700ED1F2F /* MedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedListViewController.swift; sourceTree = "<group>"; };
+		C0A6E24B2C67613100ED1F2F /* SearchMedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMedViewController.swift; sourceTree = "<group>"; };
+		C0A6E24E2C67658900ED1F2F /* SearchMedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMedTableViewCell.swift; sourceTree = "<group>"; };
+		C0A6E2502C676A8F00ED1F2F /* ListMedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +67,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B3130FC2C68284B00B247E1 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5B3131092C682CE500B247E1 /* adverse */,
+				5B3131042C682CDE00B247E1 /* drug */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		5B3131042C682CDE00B247E1 /* drug */ = {
+			isa = PBXGroup;
+			children = (
+				5B3131002C682CDE00B247E1 /* DrugLabel.swift */,
+				5B3131012C682CDE00B247E1 /* DrugMeta.swift */,
+				5B3131022C682CDE00B247E1 /* Openfda.swift */,
+				5B3131032C682CDE00B247E1 /* DrugResults.swift */,
+			);
+			path = drug;
+			sourceTree = "<group>";
+		};
+		5B3131092C682CE500B247E1 /* adverse */ = {
+			isa = PBXGroup;
+			children = (
+				5B31310C2C682CFE00B247E1 /* AdverseCount.swift */,
+				5B31310A2C682CFE00B247E1 /* AdverseMeta.swift */,
+				5B31310B2C682CFE00B247E1 /* AdverseResults.swift */,
+			);
+			path = adverse;
+			sourceTree = "<group>";
+		};
+		5B3131142C682E4900B247E1 /* Table cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0A6E24E2C67658900ED1F2F /* SearchMedTableViewCell.swift */,
+				C0A6E2502C676A8F00ED1F2F /* ListMedTableViewCell.swift */,
+			);
+			path = "Table cells";
+			sourceTree = "<group>";
+		};
+		5B3131152C682E7B00B247E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C0A6E2242C67564600ED1F2F = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +133,39 @@
 		C0A6E22F2C67564700ED1F2F /* MediFInderApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B3131152C682E7B00B247E1 /* Extensions */,
+				C0A6E24D2C67655800ED1F2F /* Model */,
+				C0A6E2442C675EE200ED1F2F /* Controllers */,
 				C0A6E2302C67564700ED1F2F /* AppDelegate.swift */,
 				C0A6E2322C67564700ED1F2F /* SceneDelegate.swift */,
-				C0A6E2342C67564700ED1F2F /* ViewController.swift */,
 				C0A6E2362C67564700ED1F2F /* Main.storyboard */,
 				C0A6E2392C67564900ED1F2F /* Assets.xcassets */,
 				C0A6E23B2C67564900ED1F2F /* LaunchScreen.storyboard */,
 				C0A6E23E2C67564900ED1F2F /* Info.plist */,
+				C0A6E2472C67605400ED1F2F /* Localizable.xcstrings */,
 			);
 			path = MediFInderApp;
+			sourceTree = "<group>";
+		};
+		C0A6E2442C675EE200ED1F2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0A6E2452C675F0600ED1F2F /* AdverseViewController.swift */,
+				C0A6E2492C67610700ED1F2F /* MedListViewController.swift */,
+				C0A6E24B2C67613100ED1F2F /* SearchMedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0A6E24D2C67655800ED1F2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B3131142C682E4900B247E1 /* Table cells */,
+				5B3130FC2C68284B00B247E1 /* Remote */,
+				5B3131102C682E3600B247E1 /* AdverseManager.swift */,
+				5B3131122C682E4200B247E1 /* DrugManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +210,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = C0A6E2242C67564600ED1F2F;
 			productRefGroup = C0A6E22E2C67564700ED1F2F /* Products */;
@@ -127,6 +229,7 @@
 			files = (
 				C0A6E23A2C67564900ED1F2F /* Assets.xcassets in Resources */,
 				C0A6E23D2C67564900ED1F2F /* Base in Resources */,
+				C0A6E2482C67605400ED1F2F /* Localizable.xcstrings in Resources */,
 				C0A6E2382C67564700ED1F2F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +241,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0A6E2352C67564700ED1F2F /* ViewController.swift in Sources */,
+				5B3131052C682CDE00B247E1 /* DrugLabel.swift in Sources */,
 				C0A6E2312C67564700ED1F2F /* AppDelegate.swift in Sources */,
 				C0A6E2332C67564700ED1F2F /* SceneDelegate.swift in Sources */,
+				C0A6E24C2C67613100ED1F2F /* SearchMedViewController.swift in Sources */,
+				5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */,
+				C0A6E2512C676A8F00ED1F2F /* ListMedTableViewCell.swift in Sources */,
+				C0A6E2462C675F0600ED1F2F /* AdverseViewController.swift in Sources */,
+				C0A6E24F2C67658900ED1F2F /* SearchMedTableViewCell.swift in Sources */,
+				5B3131172C682E8C00B247E1 /* NetworkMonitor.swift in Sources */,
+				5B3131082C682CDE00B247E1 /* DrugResults.swift in Sources */,
+				5B3131132C682E4200B247E1 /* DrugManager.swift in Sources */,
+				5B31310F2C682CFE00B247E1 /* AdverseCount.swift in Sources */,
+				5B31310D2C682CFE00B247E1 /* AdverseMeta.swift in Sources */,
+				5B31310E2C682CFE00B247E1 /* AdverseResults.swift in Sources */,
+				C0A6E24A2C67610700ED1F2F /* MedListViewController.swift in Sources */,
+				5B3131062C682CDE00B247E1 /* DrugMeta.swift in Sources */,
+				5B3131072C682CDE00B247E1 /* Openfda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +409,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LCCA67G74J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MediFInderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MediFinder;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +438,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LCCA67G74J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MediFInderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MediFinder;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

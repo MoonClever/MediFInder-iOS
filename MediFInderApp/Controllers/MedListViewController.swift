@@ -27,3 +27,20 @@ class MedListViewController: UIViewController {
     */
 
 }
+
+extension MedListViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return manager?.getItemCount()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchMedCell", for: indexPath) as? ListMedTableViewCell
+        cell?.listMedImage
+        cell?.listMedBrand
+        cell?.listMedGenericName
+        cell?.listMedInterval
+        cell?.listMedQuantity
+    }
+    
+    
+}
