@@ -13,6 +13,7 @@ Se utilizó la versión de iOS 17.5, por fines de comodidad al desarrollo. Se de
 
 ## Credenciales para poder acceder al app (si se requieren)
 No se necesitan credenciales para acceder y usar la app, pero la API cuenta con una restricción de 1000 peticiones por día, por lo que para fines del proyecto se redujo el límite de resultados obtenidos.
+Como la api esta en ingles, se recomienda usar productos vendidos en EEUU o en su defecto el nombre genérico en inglés
 
 ## Dependencias del proyecto (paquetes y/o frameworks utilizados)
 Se usan las librerias que vienen por defecto en el SDK de xCode
