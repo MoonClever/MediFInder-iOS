@@ -16,7 +16,6 @@ class MedListViewController: UIViewController {
         super.viewDidLoad()
 
         storage = ListManager()
-        medTable.reloadData()
         
         // Do any additional setup after loading the view.
     }
@@ -36,11 +35,13 @@ class MedListViewController: UIViewController {
 
 extension MedListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        storage?.loadMedicine()
+        storage?.loadDetails()
         return (storage?.medicineCount())!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchMedCell", for: indexPath) as! ListMedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "medListCell", for: indexPath) as! ListMedTableViewCell
         
         let currentEvent = storage?.readMedicineAt(index: indexPath.row)
         
@@ -51,6 +52,14 @@ extension MedListViewController: UITableViewDelegate, UITableViewDataSource{
         cell.listMedQuantity.text = "Quantity: \(currentEvent!.quantity)"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        storage?.loadMedicine()
+        storage?.loadDetails()
+        medTable.reloadData()
+        
     }
     
     

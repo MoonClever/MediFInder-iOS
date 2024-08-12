@@ -66,7 +66,7 @@ class AdverseViewController: UIViewController {
                                 self.present(alert, animated: true, completion: nil)
                             }
                             
-                            
+                            return
                         }
                     }
                     

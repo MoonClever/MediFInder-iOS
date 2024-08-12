@@ -14,7 +14,6 @@
 		5B31310D2C682CFE00B247E1 /* AdverseMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310A2C682CFE00B247E1 /* AdverseMeta.swift */; };
 		5B31310E2C682CFE00B247E1 /* AdverseResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310B2C682CFE00B247E1 /* AdverseResults.swift */; };
 		5B31310F2C682CFE00B247E1 /* AdverseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31310C2C682CFE00B247E1 /* AdverseCount.swift */; };
-		5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131102C682E3600B247E1 /* AdverseManager.swift */; };
 		5B3131132C682E4200B247E1 /* DrugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131122C682E4200B247E1 /* DrugManager.swift */; };
 		5B3131172C682E8C00B247E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */; };
 		C020A8132C69E9880087715F /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8122C69E9880087715F /* LocalStorage.swift */; };
@@ -46,7 +45,6 @@
 		5B31310A2C682CFE00B247E1 /* AdverseMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseMeta.swift; sourceTree = "<group>"; };
 		5B31310B2C682CFE00B247E1 /* AdverseResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseResults.swift; sourceTree = "<group>"; };
 		5B31310C2C682CFE00B247E1 /* AdverseCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdverseCount.swift; sourceTree = "<group>"; };
-		5B3131102C682E3600B247E1 /* AdverseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverseManager.swift; sourceTree = "<group>"; };
 		5B3131122C682E4200B247E1 /* DrugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugManager.swift; sourceTree = "<group>"; };
 		5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C020A8122C69E9880087715F /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			children = (
 				5B3131142C682E4900B247E1 /* Table cells */,
 				5B3130FC2C68284B00B247E1 /* Remote */,
-				5B3131102C682E3600B247E1 /* AdverseManager.swift */,
 				5B3131122C682E4200B247E1 /* DrugManager.swift */,
 			);
 			path = Model;
@@ -269,7 +266,6 @@
 				C0A6E2312C67564700ED1F2F /* AppDelegate.swift in Sources */,
 				C0A6E2332C67564700ED1F2F /* SceneDelegate.swift in Sources */,
 				C0A6E24C2C67613100ED1F2F /* SearchMedViewController.swift in Sources */,
-				5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */,
 				C0A6E2512C676A8F00ED1F2F /* ListMedTableViewCell.swift in Sources */,
 				C0A6E2462C675F0600ED1F2F /* AdverseViewController.swift in Sources */,
 				C020A8192C69EBC30087715F /* Medicine.swift in Sources */,
