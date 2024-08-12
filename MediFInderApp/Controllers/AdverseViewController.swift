@@ -26,6 +26,7 @@ class AdverseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTapped()
         
         pickerData = ["Hypertension",
                       "Headache",

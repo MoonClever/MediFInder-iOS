@@ -27,6 +27,8 @@ class SearchMedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideKeyboardWhenTapped()
 
         storage = ListManager()
         MedTableView.reloadData()

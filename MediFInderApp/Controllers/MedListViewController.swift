@@ -14,6 +14,8 @@ class MedListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideKeyboardWhenTapped()
 
         storage = ListManager()
         
