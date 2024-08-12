@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct MedicineSearch : Codable{
+    var genName : String?
+    var branName : String?
+    var manufacturer: String?
+    var route: String?
+    
+}

@@ -8,10 +8,16 @@
 import UIKit
 
 class MedListViewController: UIViewController {
+    
+    @IBOutlet weak var medTable: UITableView!
+    var storage: ListManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        storage = ListManager()
+        medTable.reloadData()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -30,16 +36,21 @@ class MedListViewController: UIViewController {
 
 extension MedListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return manager?.getItemCount()
+        return (storage?.medicineCount())!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchMedCell", for: indexPath) as? ListMedTableViewCell
-        cell?.listMedImage
-        cell?.listMedBrand
-        cell?.listMedGenericName
-        cell?.listMedInterval
-        cell?.listMedQuantity
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchMedCell", for: indexPath) as! ListMedTableViewCell
+        
+        let currentEvent = storage?.readMedicineAt(index: indexPath.row)
+        
+        cell.listMedImage.image = UIImage(systemName: "list.clipboard")
+        cell.listMedBrand.text = currentEvent!.branName
+        cell.listMedGenericName.text = currentEvent!.genName
+        cell.listMedInterval.text = "Time interval: \(currentEvent!.timePerDose) hrs"
+        cell.listMedQuantity.text = "Quantity: \(currentEvent!.quantity)"
+        
+        return cell
     }
     
     

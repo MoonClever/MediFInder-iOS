@@ -17,6 +17,14 @@
 		5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131102C682E3600B247E1 /* AdverseManager.swift */; };
 		5B3131132C682E4200B247E1 /* DrugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131122C682E4200B247E1 /* DrugManager.swift */; };
 		5B3131172C682E8C00B247E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */; };
+		C020A8132C69E9880087715F /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8122C69E9880087715F /* LocalStorage.swift */; };
+		C020A8152C69EA9A0087715F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8142C69EA9A0087715F /* UIViewControllerExtension.swift */; };
+		C020A8172C69EB390087715F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8162C69EB390087715F /* Constants.swift */; };
+		C020A8192C69EBC30087715F /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8182C69EBC30087715F /* Medicine.swift */; };
+		C020A81B2C69EBD90087715F /* MedicineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A81A2C69EBD90087715F /* MedicineDetail.swift */; };
+		C020A81D2C69F00C0087715F /* ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A81C2C69F00C0087715F /* ListManager.swift */; };
+		C020A81F2C69F5E30087715F /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A81E2C69F5E30087715F /* URLHelper.swift */; };
+		C020A8212C6A45E10087715F /* MedicineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A8202C6A45E10087715F /* MedicineSearch.swift */; };
 		C0A6E2312C67564700ED1F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2302C67564700ED1F2F /* AppDelegate.swift */; };
 		C0A6E2332C67564700ED1F2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A6E2322C67564700ED1F2F /* SceneDelegate.swift */; };
 		C0A6E2382C67564700ED1F2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C0A6E2372C67564700ED1F2F /* Base */; };
@@ -41,6 +49,14 @@
 		5B3131102C682E3600B247E1 /* AdverseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverseManager.swift; sourceTree = "<group>"; };
 		5B3131122C682E4200B247E1 /* DrugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugManager.swift; sourceTree = "<group>"; };
 		5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		C020A8122C69E9880087715F /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		C020A8142C69EA9A0087715F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		C020A8162C69EB390087715F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C020A8182C69EBC30087715F /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		C020A81A2C69EBD90087715F /* MedicineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetail.swift; sourceTree = "<group>"; };
+		C020A81C2C69F00C0087715F /* ListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManager.swift; sourceTree = "<group>"; };
+		C020A81E2C69F5E30087715F /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		C020A8202C6A45E10087715F /* MedicineSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineSearch.swift; sourceTree = "<group>"; };
 		C0A6E22D2C67564700ED1F2F /* MediFInderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediFInderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A6E2302C67564700ED1F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A6E2322C67564700ED1F2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +88,10 @@
 			children = (
 				5B3131092C682CE500B247E1 /* adverse */,
 				5B3131042C682CDE00B247E1 /* drug */,
+				C020A8182C69EBC30087715F /* Medicine.swift */,
+				C020A81A2C69EBD90087715F /* MedicineDetail.swift */,
+				C020A81C2C69F00C0087715F /* ListManager.swift */,
+				C020A8202C6A45E10087715F /* MedicineSearch.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -110,6 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				5B3131162C682E8C00B247E1 /* NetworkMonitor.swift */,
+				C020A8122C69E9880087715F /* LocalStorage.swift */,
+				C020A8142C69EA9A0087715F /* UIViewControllerExtension.swift */,
+				C020A8162C69EB390087715F /* Constants.swift */,
+				C020A81E2C69F5E30087715F /* URLHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,14 +272,22 @@
 				5B3131112C682E3600B247E1 /* AdverseManager.swift in Sources */,
 				C0A6E2512C676A8F00ED1F2F /* ListMedTableViewCell.swift in Sources */,
 				C0A6E2462C675F0600ED1F2F /* AdverseViewController.swift in Sources */,
+				C020A8192C69EBC30087715F /* Medicine.swift in Sources */,
+				C020A81D2C69F00C0087715F /* ListManager.swift in Sources */,
 				C0A6E24F2C67658900ED1F2F /* SearchMedTableViewCell.swift in Sources */,
 				5B3131172C682E8C00B247E1 /* NetworkMonitor.swift in Sources */,
+				C020A8132C69E9880087715F /* LocalStorage.swift in Sources */,
+				C020A8212C6A45E10087715F /* MedicineSearch.swift in Sources */,
 				5B3131082C682CDE00B247E1 /* DrugResults.swift in Sources */,
 				5B3131132C682E4200B247E1 /* DrugManager.swift in Sources */,
 				5B31310F2C682CFE00B247E1 /* AdverseCount.swift in Sources */,
 				5B31310D2C682CFE00B247E1 /* AdverseMeta.swift in Sources */,
 				5B31310E2C682CFE00B247E1 /* AdverseResults.swift in Sources */,
+				C020A81B2C69EBD90087715F /* MedicineDetail.swift in Sources */,
+				C020A8172C69EB390087715F /* Constants.swift in Sources */,
 				C0A6E24A2C67610700ED1F2F /* MedListViewController.swift in Sources */,
+				C020A8152C69EA9A0087715F /* UIViewControllerExtension.swift in Sources */,
+				C020A81F2C69F5E30087715F /* URLHelper.swift in Sources */,
 				5B3131062C682CDE00B247E1 /* DrugMeta.swift in Sources */,
 				5B3131072C682CDE00B247E1 /* Openfda.swift in Sources */,
 			);

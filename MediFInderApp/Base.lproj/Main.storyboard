@@ -25,31 +25,29 @@
                                     <outlet property="delegate" destination="Sjj-z7-hoQ" id="TIe-hn-phN"/>
                                 </connections>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-G3-24U">
-                                <rect key="frame" x="307" y="174" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-G3-24U">
+                                <rect key="frame" x="318" y="174" width="30" height="30"/>
                                 <menu key="menu" id="m36-Te-ahg">
                                     <children>
-                                        <command title="Item 1" id="Jdj-L1-69u"/>
-                                        <command title="Item 2" id="2yG-lP-El7"/>
+                                        <command title="2" id="Jdj-L1-69u"/>
+                                        <command title="5" discoverabilityTitle="" id="2yG-lP-El7"/>
+                                        <command title="10" id="71i-n4-YQW"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="QueryType"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8c-c5-u4s">
-                                <rect key="frame" x="41" y="174" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8c-c5-u4s">
+                                <rect key="frame" x="41" y="174" width="98" height="30"/>
                                 <menu key="menu" id="ZC0-di-SgJ">
                                     <children>
-                                        <command title="Item 1" id="81I-xW-pnq"/>
-                                        <command title="Item 2" id="Jis-P0-NWr"/>
+                                        <command title="generic_name" id="81I-xW-pnq"/>
+                                        <command title="brand_name" id="Jis-P0-NWr"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Limit"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-eX-Cv9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-eX-Cv9">
                                 <rect key="frame" x="16" y="221" width="361" height="532"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchMedCell" rowHeight="162" id="9jM-qX-faV" customClass="SearchMedTableViewCell" customModule="MediFInderApp" customModuleProvider="target">
@@ -128,14 +126,26 @@
                         <viewLayoutGuide key="safeArea" id="btO-Nv-1FG"/>
                         <color key="backgroundColor" name="TabBarColor"/>
                         <constraints>
+                            <constraint firstItem="ZJi-G3-24U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q8c-c5-u4s" secondAttribute="trailing" constant="8" symbolic="YES" id="5qR-qr-X9H"/>
                             <constraint firstItem="baU-w5-x0N" firstAttribute="top" secondItem="btO-Nv-1FG" secondAttribute="top" constant="30" id="CWN-BC-1Fw"/>
+                            <constraint firstItem="btO-Nv-1FG" firstAttribute="bottom" secondItem="fPI-eX-Cv9" secondAttribute="bottom" constant="16" id="Di7-8c-lcE"/>
+                            <constraint firstItem="Q8c-c5-u4s" firstAttribute="leading" secondItem="btO-Nv-1FG" secondAttribute="leading" constant="41" id="IiO-cb-TXS"/>
                             <constraint firstItem="baU-w5-x0N" firstAttribute="trailing" secondItem="btO-Nv-1FG" secondAttribute="trailing" id="MKC-Kk-xBX"/>
+                            <constraint firstItem="btO-Nv-1FG" firstAttribute="trailing" secondItem="ZJi-G3-24U" secondAttribute="trailing" constant="45" id="Nbw-c0-yf1"/>
+                            <constraint firstItem="fPI-eX-Cv9" firstAttribute="top" secondItem="ZJi-G3-24U" secondAttribute="bottom" constant="17" id="Sns-QR-jpN"/>
+                            <constraint firstItem="fPI-eX-Cv9" firstAttribute="leading" secondItem="6VR-Iw-Pu7" secondAttribute="leadingMargin" id="V1s-4Z-Nnn"/>
+                            <constraint firstItem="fPI-eX-Cv9" firstAttribute="centerX" secondItem="baU-w5-x0N" secondAttribute="centerX" id="Wt0-aY-6OJ"/>
+                            <constraint firstItem="ZJi-G3-24U" firstAttribute="top" secondItem="baU-w5-x0N" secondAttribute="bottom" constant="29" id="dpV-kf-sGy"/>
+                            <constraint firstItem="ZJi-G3-24U" firstAttribute="baseline" secondItem="Q8c-c5-u4s" secondAttribute="baseline" id="kWS-dR-Lix"/>
                             <constraint firstItem="baU-w5-x0N" firstAttribute="leading" secondItem="btO-Nv-1FG" secondAttribute="leading" id="xSA-zI-MB3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search Med." image="rectangle.and.text.magnifyingglass.rtl" catalog="system" selectedImage="rectangle.and.text.magnifyingglass.rtl" id="uIa-se-lru"/>
                     <connections>
                         <outlet property="MedTableView" destination="fPI-eX-Cv9" id="4B8-dE-REH"/>
+                        <outlet property="limitBar" destination="ZJi-G3-24U" id="gdI-5k-xgL"/>
+                        <outlet property="queryType" destination="Q8c-c5-u4s" id="Hx2-mR-0NY"/>
+                        <outlet property="searchMedBar" destination="baU-w5-x0N" id="gIE-M7-lNh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6U-8u-Xsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,6 +242,9 @@
                         <color key="backgroundColor" name="TabBarColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="List Med." image="square.grid.3x3" catalog="system" selectedImage="square.grid.3x3" id="TFn-rx-b6w"/>
+                    <connections>
+                        <outlet property="medTable" destination="8Z5-jG-NJB" id="gWZ-rb-HrY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCO-Jj-bmP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,8 +300,12 @@
                                     <action selector="searchButtonClicked:" destination="ZQn-JF-zvj" eventType="touchUpInside" id="PLp-L0-lOa"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-5Z-qIs">
+                            <pickerView contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-5Z-qIs">
                                 <rect key="frame" x="0.0" y="421" width="393" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZQn-JF-zvj" id="20o-iK-PDV"/>
+                                    <outlet property="delegate" destination="ZQn-JF-zvj" id="9SN-0k-31w"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fPN-4p-X7i"/>

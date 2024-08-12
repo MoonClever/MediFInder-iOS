@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct MedicineDetail : Codable{
+    var timePerDose : Int = 0
+    var quantity : Int = 0
+    var medData : Openfda?
+    var thumbnail : String?
+}
