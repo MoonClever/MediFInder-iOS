@@ -73,7 +73,7 @@ class AdverseViewController: UIViewController {
                     do{
                         try self.queryResult = JSONDecoder().decode(AdverseCount.self, from: data)
                         
-                        let count = String(DrugManager().convertCountQueryToInt(resultCount: self.queryResult!)!)
+                        let count = String(DrugManager().convertCountQueryToInt(resultCount: self.queryResult!) ?? 0)
                         
                         //self.show(warning: "Coincidencias encontradas \(count)")
                         let alert = UIAlertController(title: "Get Exitoso",message: "Coincidencias encontradas \(count)", preferredStyle: .alert)
